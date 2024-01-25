@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: rgb(204, 171, 237);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    background: linear-gradient(to bottom, #66ff99c5 0%, #ffff66c9 100%);
+    width: 30vw;
+    height: 80vh;
+    padding: 20px;
+    -webkit-box-shadow: inset 2px 0px 9px -1px rgba(21, 18, 33, 1);
+    -moz-box-shadow: inset 2px 0px 9px -1px rgba(21, 18, 33, 1);
+    box-shadow: inset 2px 0px 9px -1px rgba(21, 18, 33, 1);
+}
+.heading{
+    font-size: 28px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: rgb(102, 0, 51);
+}
+
+/* =============================ques gif================== */
+#gif{
+    width: 100%;
+    margin-top: 15px;
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    height: 165px;
+    width: 274px;
+    overflow: hidden;
+    /* background: #000; */
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===================player_1 code=======================*/
+#player{
+    /* background: #7c4040; */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.para{
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: rgb(204, 0, 0);
+    text-transform: capitalize;
+    text-align: center;
+}
+.hint{
+    margin-bottom: 9px;
+    font-weight: 700;
+    display: none;
+}
+.chances{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(89, 0, 179);
+    display: none;
+}
+
+.data{
+    height: 36px;
+    width: 58%;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    border: none;
+    border: 1.5px solid #840dca;
+    padding: 15px;
+}
+.data::placeholder{
+    font-size: 15px;
+}
+#first{
+    display: block;
+}
+#second{
+    display: none;
+}
+.btn{
+    padding: 8px 12px;
+    background: linear-gradient(to top, #ff9900 12%, #ff6666 84%);
+    border-radius: 20px;
+    box-shadow: 0px 1px 10px lightblue;
+    text-transform: capitalize;
+}
+#guess{
+    display: none;
+}
+
+/* ==============winner=========== */
+#winner{
+    display: none;
+}
+.winner_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#winner_gif{
+    width: 100%;
+    /* margin-top: 12px; *
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner_image{
+    height: 216px;
+    width: 217px;
+    overflow: hidden;
+}
+
+.winner_image img , .fail_image.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.congo{
+    font-size: 28px;
+    text-align: center;    
+    text-transform: capitalize;
+    margin-top: 21px;
+    color: #fc205e;    
+}
+#again{
+    margin-top: 20px;
+    padding: 14px 33px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+#again:hover{
+    transform: scale(1.3);
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="game">
+            <h1 class="heading">guess the number !</h1>
+            <section id="gif">
+                <div class="image">
+                    <img id="cool" src="./images/cool.gif" alt="">
+                </div>
+            </section>
+    
+            <!-- =======================chances======================== -->
+    
+    <!-- ===============player_1 code========================= -->
+            <section id="player">
+                <h4 class="para"> start the game ! <br>enter a number between 0 to  10</h4>
+    
+                <h3 class="chances">chances remain : <span></span></h3>
+    
+                <p class="hint">Your guess is higer than my number :</p>
+                
+                <input id="first" class="data" type="number" placeholder="Enter here">
+                <input id="second" class="data" type="number" placeholder="Enter here">
+                <button id="start" class="btn">start the game</button>
+                <button id="guess" class="btn">guess</button>
+            </section>
+        </div>
+
+        <!--================== winner section =================-->
+        <section id="winner">
+            <div class="winner_wrapper">
+                <h1 class="heading">guess the number !</h1>
+                <section id="winner_gif">
+                    <div class="winner_image">
+                        <img id="winning" src="./images/winner.gif" alt="">
+                    </div>
+                </section>
+                <h2 class="congo">congrats !!! <br>You won the game</h2>
+    
+                <button id="again" class="btn">play again</button>
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
